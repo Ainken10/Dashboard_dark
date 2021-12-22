@@ -13,24 +13,25 @@ export const MostTypeOfOrder = () => {
         </div>
         <hr className="border-gray-700" />
         <div className="flex gap-x-7">
-          <img width="176" src="" alt="" />
+          <img width="176" src="/chart.svg" alt="" />
+          
           <div className="flex flex-col gap-y-4">
             <div className="flex gap-x-2 items-start">
-              <div className="w-4 h-4 mt-0.5 rounded-full bg-accent-red" />
+              <div className="w-4 h-4 mt-0.5 rounded-full bg-[#FF7CA3]" />
               <div>
                 <div className="text-sm font-medium text-white">Dine in</div>
                 <div className="text-xs text-gray-500">200 customers</div>
               </div>
             </div>
             <div className="flex gap-x-2 items-start">
-              <div className="w-4 h-4 mt-0.5 rounded-full bg-accent-orange" />
+              <div className="w-4 h-4 mt-0.5 rounded-full bg-[#FFB572]" />
               <div>
                 <div className="text-sm font-medium text-white">To go</div>
                 <div className="text-xs text-gray-500">122 customers</div>
               </div>
             </div>
             <div className="flex gap-x-2 items-start">
-              <div className="w-4 h-4 mt-0.5 rounded-full bg-accent-blue" />
+              <div className="w-4 h-4 mt-0.5 rounded-full bg-[#65B0F6]" />
               <div>
                 <div className="text-sm font-medium text-white">Delivery</div>
                 <div className="text-xs text-gray-500">264 customers</div>

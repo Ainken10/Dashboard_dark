@@ -5,17 +5,17 @@ export const MostOrdered = () => {
     const mostOrdered = [
         {
           name: "Spicy seasoned seafood noodles",
-          image: "food-1.png",
+          image: "https://i2.wp.com/seonkyounglongest.com/wp-content/uploads/2020/07/Korean-Spicy-Garlic-Seafood-Noodles-17-MINI.jpg?fit=1000%2C667&ssl=1",
           count: 200,
         },
         {
           name: "Salted pasta with mushroom sauce",
-          image: "food-2.png",
+          image: "https://www.recipetineats.com/wp-content/uploads/2016/10/Mushroom-Pasta_6.jpg?resize=650,910",
           count: 120,
         },
         {
           name: "Beef dumpling in hot and sour soup",
-          image: "food-3.png",
+          image: "https://i.pinimg.com/564x/42/5a/82/425a82cd057d388dea15a8cc979e0b9c.jpg",
           count: 80,
         },
       ];
@@ -32,8 +32,8 @@ export const MostOrdered = () => {
         <div className="flex flex-col gap-y-4">
        { mostOrdered.map((order,i) => {
            return (
-            <div v-for="order in mostOrdered" className="flex gap-x-4 items-center">
-            <img className="w-14 h-14" src="" alt="" />
+            <div key={i} className="flex gap-x-4 items-center">
+            <img className="w-14 h-14" src={order.image} alt="" />
             <div className="flex flex-col gap-y-0.5">
               <div className="text-sm font-medium text-white">{ order.name }</div>
               <div className="text-xs text-gray-500">{ order.count } dishes ordered</div>

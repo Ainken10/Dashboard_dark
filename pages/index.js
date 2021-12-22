@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { MostOrdered } from "../components/MostOrdered";
+import { MostTypeOfOrder } from "../components/MostTypeOfOrder";
 import { OrderReport } from "../components/OrderReport";
 import Sidebar from "../components/Sidebar";
 import { StatsCard } from "../components/StatsCard";
@@ -19,8 +21,8 @@ export default function Home() {
         <OrderReport />
       </main>
       <aside className="flex flex-col gap-y-6 pt-6 pr-6 w-96">
-        {/* <MostOrdered /> */}
-        {/* <MostTypeOfOrder /> */}
+        <MostOrdered />
+        <MostTypeOfOrder />
       </aside>
     </div>
   );

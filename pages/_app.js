@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import useDarkMode from "../hooks/useDarkMode";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useDarkMode();
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

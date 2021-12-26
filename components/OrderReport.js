@@ -47,27 +47,27 @@ export const OrderReport = () => {
         },
       ];
     return (
-        <div className="p-6 bg-gray-900 rounded-lg">
+        <div className="p-6 bg-sky-300 dark:bg-gray-900 rounded-lg">
         <div className="flex justify-between items-center pb-4">
           <h2 className="text-xl font-semibold leading-loose text-white">Order Report</h2>
-          <button className="flex py-3 px-4 rounded-lg border border-gray-700 gap-x-2.5 items-center">
-            <CogIcon className='text-gray-400 h-4 w-4' />
-            <span className="text-sm text-gray-400">Filter order</span>
+          <button className="flex py-3 px-4 rounded-lg border dark:border-gray-700 gap-x-2.5 items-center text-sky-100 dark:text-gray-400">
+            <CogIcon className=' h-4 w-4' />
+            <span className="text-sm ">Filter order</span>
           </button>
         </div>
         <table className="w-full">
           <thead>
             <tr className="text-sm font-semibold text-white">
-              <td className="py-4 border-b border-gray-700">Customer</td>
-              <td className="py-4 border-b border-gray-700">Menu</td>
-              <td className="py-4 border-b border-gray-700 text-right">Total Payment</td>
-              <td className="py-4 border-b border-gray-700 text-center">Status</td>
+              <td className="py-4 border-b dark:border-gray-700">Customer</td>
+              <td className="py-4 border-b dark:border-gray-700">Menu</td>
+              <td className="py-4 border-b dark:border-gray-700 text-right">Total Payment</td>
+              <td className="py-4 border-b dark:border-gray-700 text-center">Status</td>
             </tr>
           </thead>
           <tbody>
              { orders.map( (order,i) => {
                   return (
-                    <tr key={i} v-for="order in orders" className="text-sm text-gray-500">
+                    <tr key={i} v-for="order in orders" className=" text-sky-100 dark:text-gray-500">
                     <td className="py-4">
                       <div className="flex gap-4 items-center">
                         {/* <img width="32" src="" alt="" /> */}

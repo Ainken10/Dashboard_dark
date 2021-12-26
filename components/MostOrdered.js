@@ -20,15 +20,15 @@ export const MostOrdered = () => {
         },
       ];
     return (
-        <div className="flex flex-col p-6 bg-gray-900 rounded-lg gap-y-6">
+        <div className="flex flex-col p-6 bg-sky-300 dark:bg-gray-900 rounded-lg gap-y-6">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-semibold leading-loose text-white">Most Ordered</h2>
-          <button className="flex gap-x-2.5 py-3 px-4 rounded-lg border border-gray-700">
-            <ChevronDownIcon />
+          <button className="flex gap-x-2.5 py-3 px-4 rounded-lg border dark:border-gray-700">
+            <ChevronDownIcon className='h-5 w-5 text-white'  />
             <span className="text-sm text-white">Today</span>
           </button>
         </div>
-        <hr className="border-gray-700" />
+        <hr className=" boder-sky-100 dark:border-gray-700" />
         <div className="flex flex-col gap-y-4">
        { mostOrdered.map((order,i) => {
            return (
@@ -36,14 +36,14 @@ export const MostOrdered = () => {
             <img className="w-14 h-14" src={order.image} alt="" />
             <div className="flex flex-col gap-y-0.5">
               <div className="text-sm font-medium text-white">{ order.name }</div>
-              <div className="text-xs text-gray-500">{ order.count } dishes ordered</div>
+              <div className="text-xs text-sky-100 dark:text-gray-500">{ order.count } dishes ordered</div>
             </div>
           </div>
            )
        } )  }
         </div>
         <button
-          className="py-3.5 rounded-lg w-full border border-primary text-primary text-sm font-semibold"
+          className="py-3.5 rounded-lg w-full border border-sky-100 dark:border-white text-sm font-semibold dark:text-white text-sky-100"
         >
           View all
         </button>

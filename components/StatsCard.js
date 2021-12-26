@@ -4,7 +4,7 @@ import {
   TrendingDownIcon,
   CurrencyDollarIcon,
   UsersIcon,
-  GiftIcon
+  GiftIcon,
 } from "@heroicons/react/outline";
 
 export const StatsCard = () => {
@@ -14,21 +14,23 @@ export const StatsCard = () => {
       percentage: "+32.40%",
       value: "$10,243.00",
       status: "up",
-      icon: <CurrencyDollarIcon className="h-5 w-5 text-gray-400" />,
+      icon: (
+        <CurrencyDollarIcon className="h-5 w-5 text-sky-200 dark:text-gray-400" />
+      ),
     },
     {
       title: "Total Dish Ordered",
       percentage: "-12.40%",
       value: "23,456",
       status: "down",
-      icon: <GiftIcon className="h-5 w-5 text-gray-400" />,
+      icon: <GiftIcon className="h-5 w-5 text-sky-200 dark:text-gray-400" />,
     },
     {
       title: "Total Customer",
       percentage: "+2.40%",
       value: "1,234",
       status: "up",
-      icon: <UsersIcon className="h-5 w-5 text-gray-400" />,
+      icon: <UsersIcon className="h-5 w-5 text-sky-200 dark:text-gray-400" />,
     },
   ];
 
@@ -38,10 +40,12 @@ export const StatsCard = () => {
         return (
           <div
             key={i}
-            className="flex flex-col p-4 w-1/3 bg-gray-900 rounded-lg gap-y-3"
+            className="flex flex-col p-4 w-1/3 bg-sky-300 dark:bg-gray-900 rounded-lg gap-y-3 shadow-md"
           >
             <div className="flex items-center gap-x-3">
-              <div className="p-1 bg-gray-800 rounded-lg">{stat.icon}</div>
+              <div className="p-1 bg-sky-500 dark:bg-gray-800  rounded-lg">
+                {stat.icon}
+              </div>
               <span
                 className={`text-xs font-medium ${
                   stat.status === "up" ? "text-green-700" : "text-red-500"
@@ -69,7 +73,7 @@ export const StatsCard = () => {
             <div className="text-3xl font-semibold text-white">
               {stat.value}
             </div>
-            <div className="text-sm tracking-wide text-gray-500">
+            <div className="text-sm tracking-wide text-sky-100 dark:text-gray-500">
               {stat.title}
             </div>
           </div>
